@@ -47,12 +47,11 @@ while True:
     print("6.Quit")
     try:
         choice=int(input("Enter the task you want to perform: "))
-    except:
+    except ValueError:
         print("invalid input!choose an integer!!")
         continue
 
     if choice==1:
-        try:
          new_student_name= input("enter name of new student: ")
          new_student_phone=input("enter phone of new student: ")
          new_student_email= input("Enter email of new student: ")
@@ -60,9 +59,8 @@ while True:
          contacts.append(new_std_details)
          save_contacts()
          print(f"{new_student_name}'s details sucessfully added!")
-        except:
-            print("invalid input! try again!!")
-            continue
+         print("invalid input! try again!!")
+        
     elif choice==2:
         view_all()
         continue
@@ -71,7 +69,7 @@ while True:
         std_name= input("enter name to search: ")
         for index,contact in enumerate(contacts):
             if std_name== contact.name:
-                print(f"details of {contact.name}:{contact.phone},{contact.email}")
+                print(f"details of {contact.name}:\nnumber: {contact.phone}\nemail:{contact.email}")
                 break
         else:
             print("sorry! contact not found")
@@ -84,7 +82,7 @@ while True:
             contact= contacts.pop(chc)
             save_contacts()
             print(f"{contact.name} sucessfully deleted ")
-        except:
+        except ValueError:
             print("invalid input!!")
             continue
 

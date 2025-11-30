@@ -1,6 +1,6 @@
 ## 📇 Contact Manager
 
-A Python CLI app to manage contacts easilyadd, view, search, edit, and delete contacts with persistent storage in JSON.
+A Python CLI app to manage contacts and easily add, view, search, edit, and delete contacts with persistent storage in JSON.
 
 ## 🚀 Features
 
@@ -14,7 +14,8 @@ A Python CLI app to manage contacts easilyadd, view, search, edit, and delete co
 ## 🛠️ Installation & Run
 
 1) git clone <git@github.com:yeeterxx/Contact-Manager.git>
-2) cd contact-manager
+
+2) Run in your local machine 
 
 
 
